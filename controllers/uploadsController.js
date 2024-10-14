@@ -3,7 +3,7 @@ const { StatusCodes } = require('http-status-codes');
 const CustomError = require('../errors');
 const cloudinary = require('cloudinary').v2;
 const fs = require('fs');
-const { log } = require('console');
+
 
 const uploadProductImageLocal = async (req, res) => {   
   if (!req.files) {
